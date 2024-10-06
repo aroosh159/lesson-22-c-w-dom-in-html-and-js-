@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM in HTML and Javascript</title>
+</head>
+<body>
+<h1>Realtime Validation</h1>
+<hr>
+<form id="loginform" onsubmit="validate(event)">
+<fieldset>
+    <label for="email">Please Enter Your Email</label>
+    <br>
+    <input type="email" id="email" name="email">
+    <br>
+    <label for="password">Please Enter Your Password</label>
+    <br>
+    <input type="password" id="password" name="password" minlength="2" maxlength="8">
+    <br>
+    <label for="age">Please Enter Your Age</label>
+    <br>
+    <input type="number" id="age" name="age" min="12" max="50">
+    <button>LOGIN</button>
+</fieldset>
+</form>
+<script src="script.js">
+</script>
+</body>
+</html>
